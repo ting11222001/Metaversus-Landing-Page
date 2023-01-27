@@ -28,7 +28,7 @@ const World = () => (
 
       <motion.div
         variants={fadeIn('up', 'tween', 0.3, 1)}
-        className="relateive mt-[68px] flex w-full h-[550px]"
+        className="relateive mt-[68px] flex w-full h-1/2"
       >
         <img src="/map.png" alt="map" className="w-full h-full object-cover" />
 
