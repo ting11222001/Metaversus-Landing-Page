@@ -18,7 +18,7 @@ const Feedback = () => (
         variants={fadeIn('right', 'tween', 0.2, 1)}
         className="flex-[0.5] lg:max-w-[370px] flex justify-end flex-col gradient-05 sm:p=8 p-4 rounded-[32px] border-[1px] border-[#6a6a6a6a] relative"
       >
-        <div className="feedback-gradient"></div>
+        <div className="feedback-gradient" />
         <div>
           <h4 className="font-bod sm:text-[32px] tex-[26px] sm:leading-[40px] leading-[36px] text-white">Samantha</h4>
           <p className="mt-[8px] font-normal sm:text-[18px] text-[12px] sm:leading-[22px] leading-[16px] text-white">Founder | Metaversus</p>

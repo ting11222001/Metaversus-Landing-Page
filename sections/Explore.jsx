@@ -39,7 +39,7 @@ const Explore = () => {
         </div>
       </motion.div>
     </section>
-  )
-}
+  );
+};
 
 export default Explore;
