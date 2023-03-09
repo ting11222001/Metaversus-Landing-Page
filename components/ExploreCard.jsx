@@ -3,14 +3,13 @@
 import { motion } from 'framer-motion';
 
 import styles from '../styles';
-import { fadeIn } from '../utils/motion';
 
-const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
+const ExploreCard = ({ id, imgUrl, index, title, active, handleClick }) => (
   <motion.div
     initial={{ opacity: 0, translateX: -50 }}
     animate={{ opacity: 1, translateX: 0 }}
-    transition={{ duraction: 0.3 }}
-    className={`relative ${active === id ? 'lg:flex-[3.5] flex-[10]' : 'lg:flex-[0.5] flex-[2]'} flex items-center justify-center min-w-[170px] h-[700px] cursor-pointer`}
+    transition={{ duration: 0.3, delay: index * 0.3 }}
+    className={`relative ${active === id ? 'lg:flex-[3.5] flex-[10]' : 'lg:flex-[0.5] flex-[2]'} flex items-center justify-center min-w-[170px] h-[700px] transition-[flex] duration-[0.2s] ease-out-flex cursor-pointer`}
     onClick={() => handleClick(id)}
   >
     <img src={imgUrl} alt={title} className="absolute w-full h-full object-cover rounded-[24px]" />
