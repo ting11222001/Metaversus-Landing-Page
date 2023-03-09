@@ -23,7 +23,7 @@ const Page = () => (
     <div className="relative">
       <Insights />
       <div className="gradient-04 z-0" />
-      <Feedback />
+      {/* <Feedback /> */}
     </div>
 
     <Footer />
