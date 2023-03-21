@@ -1,12 +1,12 @@
 'use client';
 
 import { motion } from 'framer-motion';
-
+import Image from 'next/image';
 import styles from '../styles';
 import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
-
 import { StartSteps, TitleText, TypingText } from '../components';
 import { startingFeatures } from '../constants';
+import getStarted from '../public/get-started.webp';
 
 const GetStarted = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -21,7 +21,13 @@ const GetStarted = () => (
         variants={planetVariants('left')}
         className={`flex-1 ${styles.flexCenter}`}
       >
-        <img src="/get-started.webp" alt="get-started" className="w-[90%] h-[90%] object-contain" />
+        <Image
+          src={getStarted}
+          alt="planet"
+          width={600}
+          height={450}
+          placeholder="blur"
+        />
       </motion.div>
 
       <motion.div
