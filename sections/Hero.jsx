@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import styles from '../styles';
 import { staggerContainer, textVariant } from '../utils/motion';
 import stamp from '../public/stamp.webp';
+import cover from '../public/cover.webp';
 
 const Hero = () => (
   <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
@@ -35,7 +36,14 @@ const Hero = () => (
         className="relative w-full md:-mt-[20px] -mt-[12px]"
       >
         <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-[0] -top-[30px]" />
-        <img src="/cover.webp" alt="cover" className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative" />
+        <Image
+          className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative"
+          src={cover}
+          alt="cover"
+          width={500}
+          height={500}
+          loading="eager"
+        />
         {/* snap button */}
         <a href="#explore">
           <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px] relative z-10">

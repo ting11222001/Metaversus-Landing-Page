@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import styles from '../styles';
 import { navVariants } from '../utils/motion';
 import search from '../public/search.svg';
+import menu from '../public/menu.svg';
 
 const Navbar = () => (
   <motion.nav
@@ -30,7 +31,13 @@ const Navbar = () => (
         </h2>
       </div>
       <div>
-        <img src="/menu.svg" alt="menu" className="w-[24px] h-[24px] object-contain" />
+        <Image
+          className="w-[24px] h-[24px] object-contain"
+          src={menu}
+          alt="menu"
+          width={50}
+          height={50}
+        />
       </div>
     </div>
   </motion.nav>
