@@ -10,10 +10,11 @@ const InsightCard = ({ imgUrl, title, subtitle, index }) => (
     className="flex md:flex-row flex-col gap-4"
   >
     <Image
+      className="rounded-lg"
       src={imgUrl}
       alt="planet"
-      width={600}
-      height={450}
+      width={350}
+      height={250}
     />
     <div className="w-full flex justify-between items-center">
       <div className="flex-1 md:ml-[62px] flex flex-col max-w-[650px]">
