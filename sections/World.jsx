@@ -30,10 +30,10 @@ const World = () => (
         variants={fadeIn('up', 'tween', 0.3, 1)}
         className="relateive mt-[68px] flex w-full h-1/2"
       >
-        <img src="/map.png" alt="map" className="w-full h-full object-cover" />
+        <img src="/map.webp" alt="map" className="w-full h-full object-cover" />
 
         <div className="absolute bottom-[10%] right-[10%] w-[70px] h-[70px] p-[6px] rounded-full bg-[#5d6680]">
-          <img src="people-01.png" alt="people-01" className="w-full h-full" />
+          <img src="people-01.webp" alt="people-01" className="w-full h-full" />
         </div>
       </motion.div>
     </motion.div>

@@ -39,7 +39,7 @@ const Feedback = () => (
           variants={zoomIn(0.4, 1)}
           className="lg:block hidden absolute -left-[10%] 2xl:-left-[5%] top-[3%]"
         >
-          <img src="/stamp.png" alt="stamp" className="w-[155px] h-[155px] object-contain" />
+          <img src="/stamp.webp" alt="stamp" className="w-[155px] h-[155px] object-contain" />
 
         </motion.div>
 
