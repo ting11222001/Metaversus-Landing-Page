@@ -1,12 +1,12 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
-
 import styles from '../styles';
 import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
-
 import { NewFeatures, TitleText, TypingText } from '../components';
 import { newFeatures } from '../constants';
+import whatsNew from '../public/whats-new.webp';
 
 const WhatsNew = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -37,7 +37,13 @@ const WhatsNew = () => (
         variants={planetVariants('right')}
         className={`flex-1 ${styles.flexCenter}`}
       >
-        <img src="/whats-new.webp" alt="whats-new" className="w-[90%] h-[90%] object-contain" />
+        <Image
+          className="w-[90%] h-[90%] object-contain"
+          src={whatsNew}
+          alt="whatsNew"
+          width={600}
+          height={450}
+        />
       </motion.div>
 
     </motion.div>
