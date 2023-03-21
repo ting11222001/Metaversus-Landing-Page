@@ -1,7 +1,7 @@
 export const exploreWorlds = [
   {
     id: 'world-1',
-    imgUrl: '/planet-01.webp',
+    imgUrl: '/planet-06.webp',
     title: 'The Hogwarts',
   },
   {
@@ -16,12 +16,12 @@ export const exploreWorlds = [
   },
   {
     id: 'world-4',
-    imgUrl: '/planet-04.webp',
+    imgUrl: '/planet-08.webp',
     title: 'Paradise Island',
   },
   {
     id: 'world-5',
-    imgUrl: '/planet-05.webp',
+    imgUrl: '/planet-09.webp',
     title: 'Hawkins Labs',
   },
 ];
