@@ -1,9 +1,10 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
-
 import styles from '../styles';
 import { staggerContainer, textVariant } from '../utils/motion';
+import stamp from '../public/stamp.webp';
 
 const Hero = () => (
   <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
@@ -38,9 +39,13 @@ const Hero = () => (
         {/* snap button */}
         <a href="#explore">
           <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px] relative z-10">
-            <img src="/stamp.webp"
-              alt="stamp"
+            <Image
               className="sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain"
+              src={stamp}
+              alt="stamp"
+              width={50}
+              height={50}
+              placeholder="blur"
             />
           </div>
         </a>
