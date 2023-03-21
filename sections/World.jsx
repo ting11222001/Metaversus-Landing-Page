@@ -1,11 +1,12 @@
 'use client';
 
 import { motion } from 'framer-motion';
-
+import Image from 'next/image';
 import styles from '../styles';
 import { staggerContainer, fadeIn } from '../utils/motion';
-
 import { TitleText, TypingText } from '../components';
+import map from '../public/map.webp';
+import people01 from '../public/people-01.webp';
 
 const World = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -28,12 +29,24 @@ const World = () => (
 
       <motion.div
         variants={fadeIn('up', 'tween', 0.3, 1)}
-        className="relateive mt-[68px] flex w-full h-1/2"
+        className="relateive mt-[68px] flex justify-center"
       >
-        <img src="/map.webp" alt="map" className="w-full h-full object-cover" />
+        <Image
+          src={map}
+          alt="map"
+          width={1000}
+          height={1000}
+          placeholder="blur"
+        />
 
-        <div className="absolute bottom-[10%] right-[10%] w-[70px] h-[70px] p-[6px] rounded-full bg-[#5d6680]">
-          <img src="people-01.webp" alt="people-01" className="w-full h-full" />
+        <div className="absolute bottom-[10%] right-[10%] p-[6px] rounded-full bg-[#5d6680]">
+          <Image
+            src={people01}
+            alt="map"
+            width={70}
+            height={70}
+            placeholder="blur"
+          />
         </div>
       </motion.div>
     </motion.div>
