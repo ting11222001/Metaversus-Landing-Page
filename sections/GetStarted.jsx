@@ -22,6 +22,7 @@ const GetStarted = () => (
         className={`flex-1 ${styles.flexCenter}`}
       >
         <Image
+          className="w-[90%] h-[90%] object-contain"
           src={getStarted}
           alt="planet"
           width={600}

@@ -32,6 +32,7 @@ const World = () => (
         className="relateive mt-[68px] flex justify-center"
       >
         <Image
+          className="w-full h-full object-cover"
           src={map}
           alt="map"
           width={1000}
